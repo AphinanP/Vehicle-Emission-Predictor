@@ -67,9 +67,6 @@ Nonetheless, this application also contains contents for you to understand CO2 e
 filename = 'finalized_model.sav'
 model = pickle.load(open(filename, 'rb'))
 
-path = "1995-2022.csv"
-df = pd.read_csv(path)
-
 ''' Graph '''
 
 
