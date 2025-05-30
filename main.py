@@ -101,7 +101,7 @@ if st.button(' 🔎 Predict! '):
     elif fuel_type == 'Premium Gasoline':
         p = 1
     elif fuel_type == 'Ethanol (E85)':
-        e = 0
+        e = 1
     
     X = np.array([[engine, cylinders, fuel_consuption, e, r, p]])
     #st.write(X)
