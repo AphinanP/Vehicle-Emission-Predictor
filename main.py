@@ -25,7 +25,7 @@ Address: House No. 6/2 Moo.1, Nong Luang Sub-district, Tha tako District, Nakhon
     st.header(" ")
     st.header(" ")
     Im1 = Image.open('images/nu.png')
-    Im2 = Im2 = Image.open('mages/scinu.png')
+    Im2 = Im2 = Image.open('images/scinu.png')
     st.image([Im1, Im2] , width= 150)
 
 
