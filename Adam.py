@@ -47,7 +47,7 @@ and the most common greenhouse gas is **Carbon Dioxide (CO2)**.
 
 """)
 
-image = Image.open('Car.jpg')
+image = Image.open('/Images/Car.jpg')
 st.image(image)
 
 st.write("""
