@@ -27,8 +27,8 @@ Address: House No. 6/2 Moo.1, Nong Luang Sub-district, Tha tako District, Nakhon
 ''')
     st.header(" ")
     st.header(" ")
-    Im1 = Image.open('nu.png')
-    Im2 = Image.open('scinu.png')
+    Im1 = Image.open('Images/nu.png')
+    Im2 = Image.open('Images/scinu.png')
     st.image([Im1, Im2] , width= 150)
 
 
@@ -47,7 +47,7 @@ and the most common greenhouse gas is **Carbon Dioxide (CO2)**.
 
 """)
 
-image = Image.open('/Images/Car.jpg')
+image = Image.open('Images/Car.jpg')
 st.image(image)
 
 st.write("""
@@ -64,7 +64,7 @@ Nonetheless, this application also contains contents for you to understand CO2 e
 
 
 
-filename = 'finalized_model.sav'
+filename = 'model/finalized_model.sav'
 model = pickle.load(open(filename, 'rb'))
 
 
