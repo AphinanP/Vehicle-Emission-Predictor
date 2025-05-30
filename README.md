@@ -6,8 +6,4 @@ This repository contains a web application developed as part of my undergraduate
 
 [Vehicle Emission Predictor](https://aphinanp-vehicle-emission-predictor-adam-ceiokb.streamlitapp.com/)
 
-## Getting Started (*Update 5/30/2025)
-
-I wrote these instructions to memory how I did this I may use many website to understand how I did it
-
-เดี๋ยวค่อยมาเติม
+***(Update 5/30/2025)*** that version of scikit-learn is too old to deploy my model so I just shutdown this web application
