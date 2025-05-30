@@ -15,20 +15,17 @@ with st.sidebar:
     
     st.header(" ")
     
-    st.write('''
-
-Tel.(+66)932374237
-
-Email: ''', 'mailto:aphinanp62@nu.ac.th'
-'''
+    st.write("""
+Tel: (+66)932374237  
+Email: [aphinanp62@nu.ac.th](mailto:aphinanp62@nu.ac.th)  
 
 Address: House No. 6/2 Moo.1, Nong Luang Sub-district, Tha tako District, Nakhon Sawan Province, Thailand 60160
+""")
 
-''')
     st.header(" ")
     st.header(" ")
-    Im1 = Image.open('Vehicle-Emission-Predictor/Images/nu.png')
-    Im2 = Image.open('Vehicle-Emission-Predictor/Images/scinu.png')
+    Im1 = Image.open('images/nu.png')
+    Im2 = Im2 = Image.open('mages/scinu.png')
     st.image([Im1, Im2] , width= 150)
 
 
@@ -47,7 +44,7 @@ and the most common greenhouse gas is **Carbon Dioxide (CO2)**.
 
 """)
 
-image = Image.open('Vehicle-Emission-Predictor/Images/Car.jpg')
+image = Image.open('images/Car.jpg')
 st.image(image)
 
 st.write("""
@@ -64,7 +61,7 @@ Nonetheless, this application also contains contents for you to understand CO2 e
 
 
 
-filename = 'Vehicle-Emission-Predictor/model/finalized_model.sav'
+filename = 'model/finalized_model.sav'
 model = pickle.load(open(filename, 'rb'))
 
 
@@ -76,13 +73,13 @@ st.write('Predict CO2 Emissions')
 
 ### Predict CO2 Emissions
 
-left1, right1 = st.beta_columns(2)
+left1, right1 = st.columns(2)
 with left1: 
     engine = st.number_input(' ⚙ Engine Size(L) (max at 9)' , min_value=1)
 with right1:
     fuel_consuption = st.number_input('🌇 Fuel Consumption Combined(L/100 km) 🛣 (max at 35)' , min_value=0)
     
-left2, right2 = st.beta_columns(2)
+left2, right2 = st.columns(2)
 with left2: 
     fuel_type = st.selectbox(
         ' ⛽ Fuel Type ',
